@@ -18,7 +18,7 @@ body {
   align-items: flex-end;
 }
 
-.card.text-center {
+.card {
   max-width: 500px;
   margin: auto;
   padding: 20px;
@@ -33,6 +33,23 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: flex-end;
+  padding: 20px 0px 10px;
+}
+
+.other-infos .info {
+  width: 100%;
+  padding: 10px;
+}
+
+.card.weight {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.weight .weight-info {
+  text-align: center;
 }
 
 /* Grafico */
