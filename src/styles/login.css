@@ -1,0 +1,25 @@
+.page-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.page-login .login {
+  max-width: 400px;
+  width: 100%;
+}
+
+.page-login .logo img {
+  max-height: 100px;
+}
+
+.page-login .login-form {
+  text-align: center;
+  height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="./../vendor/jquery/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="./../vendor/bootstrap-4.5.3-dist/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/login.css" />
+
+    <title>Projeto</title>
+  </head>
+
+  <body>
+    <div class="page-login">
+      <div class="login">
+        <form class="login-form">
+          <div class="logo">
+            <img
+              src="data:image/png;base64,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"
+              alt="Logo"
+            />
+          </div>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Usuário" />
+          </div>
+
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Senha" />
+          </div>
+
+          <button type="button" class="btn btn-primary btn-block">Login</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

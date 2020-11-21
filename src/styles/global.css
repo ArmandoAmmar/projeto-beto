@@ -1,0 +1,97 @@
+html,
+body {
+  height: 100%;
+}
+
+.page {
+  height: 100%;
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: auto;
+  width: 100%;
+}
+
+.calories {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.card.text-center {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+}
+
+.card .card-help {
+  font-size: 12px;
+}
+
+.other-infos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+/* Grafico */
+
+.semi-circle {
+  --percentage: 1;
+  --fill: #feda3e;
+  width: 150px;
+  height: 75px;
+  position: relative;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  overflow: hidden;
+  color: var(--fill);
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.semi-circle:after {
+  content: "";
+  width: 150px;
+  height: 150px;
+  border: 10px solid;
+  border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) var(--fill) var(--fill);
+  position: absolute;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  -webkit-transform: rotate(calc(1deg * (-45 + var(--percentage) * 1.8)));
+  transform: rotate(calc(1deg * (-45 + var(--percentage) * 1.8)));
+  -webkit-animation: fillAnimation 1s ease-in;
+  animation: fillAnimation 1s ease-in;
+}
+
+@-webkit-keyframes fillAnimation {
+  0% {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  50% {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+}
+
+@keyframes fillAnimation {
+  0% {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  50% {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+}
