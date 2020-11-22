@@ -52,6 +52,8 @@ body {
   text-align: center;
 }
 
+/* Pagina de peso */
+
 .weight-page .container-text.text-center {
   padding: 40px;
   max-width: 400px;
@@ -77,6 +79,52 @@ body {
 
 .weight-page .btn-add {
   border-radius: 20px !important;
+}
+
+/* Pagina de Receita */
+
+.recipe-page img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.recipe-page h3.recipe-name {
+  text-align: center;
+  padding: 10px 0px 20px;
+}
+
+.recipe-page .recipe-info {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  padding: 10px 5px 20px;
+}
+
+.recipe-page .info .info-icon {
+  font-size: 26px;
+}
+
+.recipe-page .recipe-chips {
+  /* display: flex; */
+}
+
+.recipe-page .chip {
+  display: inline-block;
+  padding: 4px 20px;
+  background: #a1a5ab;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 20px;
+  margin: 0px 10px;
+}
+
+.recipe-page .recipe-text {
+  padding: 20px;
+  text-align: justify;
+}
+
+.recipe-page .recipe-chips {
+  text-align: center;
 }
 
 /* Grafico */
