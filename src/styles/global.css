@@ -52,6 +52,33 @@ body {
   text-align: center;
 }
 
+.weight-page .container-text.text-center {
+  padding: 40px;
+  max-width: 400px;
+  margin: auto;
+  width: 100%;
+}
+
+.weight-page .container-icon {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+.weight-page.page {
+  position: relative;
+}
+
+.weight-page .button-add {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.weight-page .btn-add {
+  border-radius: 20px !important;
+}
+
 /* Grafico */
 
 .semi-circle {
